@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: $text-color;
-  font-family: $global-font-family;
+  font-family: $font1;
   line-height: 1.5;
 
   &.overflow--hidden {
@@ -29,7 +29,7 @@ h5,
 h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
-  font-family: $header-font-family;
+  font-family: $font1;
   font-weight: bold;
 }
 
@@ -126,13 +126,15 @@ blockquote {
 /* links */
 
 a {
+  font-size: 14px;
+  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
 
-  &:visited {
-    color: $link-color-visited;
-  }
+  // &:visited {
+  //   color: $link-color-visited;
+  // }
 
   &:hover {
     color: $link-color-hover;
@@ -153,7 +155,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: $monospace;
+  font-family: $font1;
 }
 
 pre {
@@ -191,12 +193,12 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 li ul,
 li ol {
-  margin-top: 0.5em;
+  margin-top: 0.1em;
 }
 
 /*
@@ -264,7 +266,7 @@ figure {
 figcaption {
   margin-bottom: 0.5em;
   color: $muted-text-color;
-  font-family: $caption-font-family;
+  font-family: $font1;
   font-size: $type-size-6;
 
   a {

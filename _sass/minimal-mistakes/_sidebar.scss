@@ -51,12 +51,12 @@
   h5,
   h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $font1;
   }
 
   p,
   li {
-    font-family: $sans-serif;
+    font-family: $font1;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -135,7 +135,7 @@
 
   img {
     max-width: 110px;
-    border-radius: 50%;
+    border-radius: 10%;
 
     @include breakpoint($large) {
       padding: 5px;
@@ -169,12 +169,14 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
+  margin-bottom: 10px;
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
+  font-family: $font1;
   font-size: $type-size-5;
+  margin-bottom: 10px;
 }
 
 .author__bio {
@@ -190,7 +192,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $sans-serif;
+  font-family: $font1;
   z-index: 20;
   cursor: pointer;
 
@@ -216,7 +218,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +352,3 @@
     margin-right: initial;
   }
 }
-

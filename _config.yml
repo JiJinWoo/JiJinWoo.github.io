@@ -12,13 +12,13 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
 locale: "en-US"
-title: "Deep Learning"
+title: "Jason's dev blog"
 title_separator: "-"
-subtitle: "Changjin Lee" # site tagline that appears below site title in masthead
+# subtitle: "Changjin Lee" # site tagline that appears below site title in masthead
 name: "Changjin"
 description: "blog"
 url: "https://JasonLee-cp.github.io"
@@ -102,8 +102,8 @@ analytics:
 # Site Author
 author:
   name: "Changjin Lee"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "What are you waiting for?"
+  avatar: "/assets/images/IMG_0922.JPG"
+  # bio: "What are you waiting for?"
   location: "South Korea"
   email: "changjin9792@gmail.com"
   links:
@@ -271,3 +271,4 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar_main: true

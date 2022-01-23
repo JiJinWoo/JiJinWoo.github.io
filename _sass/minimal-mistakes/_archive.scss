@@ -32,11 +32,12 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 0.8em 0 0;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: $muted-text-color;
+  font-size: $type-size-3;
+  color: rgba(63, 47, 5, 0.9);
   border-bottom: 1px solid $border-color;
+  font-family: $font1;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -44,14 +45,16 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
-  line-height: initial;
+  margin-bottom: 0.9em;
+  font-family: $font1;
+  line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-family: $font1;
+  font-size: $type-size-4;
 
   a[rel="permalink"]::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -102,7 +105,7 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
+  font-family: $font1;
   font-size: $type-size-8;
   background: #000;
   text-align: right;
@@ -201,14 +204,6 @@
     font-size: 0.6em;
   }
 
-  .page__meta-sep {
-    display: block;
-
-    &::before {
-      display: none;
-    }
-  }
-
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
@@ -285,7 +280,7 @@
   }
 
   a.btn::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -311,7 +306,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -352,7 +347,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -396,7 +391,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -442,7 +437,7 @@
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -457,7 +452,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }
