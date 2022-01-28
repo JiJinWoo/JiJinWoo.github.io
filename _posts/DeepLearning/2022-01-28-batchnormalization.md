@@ -5,7 +5,7 @@ categories: ["deeplearning"]
 tag: [deeplearning, batch-normalization]
 ---
 
-Deep Neural Networks might face variety of problems, for example, gradient vanishing/exploding. As the network gets deeper and deeper, it becomes harder to train on.
+Deep Neural Networks might face a variety of problems, for example, gradient vanishing/exploding. As the network gets deeper and deeper, it becomes harder to train on.
 
 Bad initializations such as setting all weights to 0, small values, or large values bring about detrimental impacts on gradients.
 
