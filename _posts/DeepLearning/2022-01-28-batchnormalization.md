@@ -9,7 +9,7 @@ Deep Neural Networks might face a variety of problems, for example, gradient van
 
 Bad initializations such as setting all weights to 0, small values, or large values bring about detrimental impacts on gradients.
 
-There's a number of great and reasonable initialization methods such as Xavier Initialization [paper link](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf).
+There's a number of great and reasonable initialization methods such as Xavier Initialization [paper link](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf). On top of Xavier Initialization, why don't we take another great approach? The Batch Normalization.
 
 ## Batch Normalization
 
@@ -26,9 +26,9 @@ Let $x^{(k)}$ be the activation vector of the given layer. Then, we can achieve 
 
 Batch normalization is usually inserted
 
-**After** FC layers or Conv layers and
+- **After** FC layers or Conv layers and
 
-**Before** nonlinearity/activation functions.
+- **Before** nonlinearity/activation functions.
 
 So the general flow is **FC/Conv -> BN -> Activation**
 
@@ -40,7 +40,7 @@ However, do we **always** want this saturation? The answer is maybe or maybe not
 
 So, why don't we let our almighty neural network to handle with that by giving flexibility?
 
-This sounds like a reasonable strategy. The way to achieve this flexibility is to introduce **learnable parameters** that can control the values of $\hat{x}^{(k)}$.
+This sounds like a reasonable strategy. The way to achieve this flexibility is to introduce **learnable parameters** that can control the values of $\hat{x}^{(k)}$:
 
 \[ y^{(k)} = \gamma^{(k)}\hat{x}^{(k)}+\beta^{(k)} \]
 
@@ -50,7 +50,7 @@ One cool thing is if our almighty network decides that it's the best **NOT** to 
 
 \[ \gamma^{(k)} = \sqrt{Var[x^{(k)}]} \\\ \beta^{(k)} = E{[x^{(k)}]} \]
 
-This computation **recovers** the **identity mapping**. You can put these values into the $\hat{x^{(k)}}$ equation above to check this out.
+This computation **recovers** the **identity mapping**. You can put these values into the $\hat{y^{(k)}}$ equation above to check this out.
 
 ## Advantages
 
