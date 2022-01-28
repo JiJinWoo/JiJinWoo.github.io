@@ -170,15 +170,29 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: 0.8em;
-  background: $code-background-color;
+  background: rgba(212, 209, 209, 0.6);
   border-radius: $border-radius;
-
+  font-family: Consolas, "courier new";
+  padding: 1px;
   &:before,
   &:after {
     letter-spacing: -0.2em;
     content: "\00a0"; /* non-breaking space*/
   }
+  color: red;
+  font-weight: 520;
 }
+
+// code {
+//   span {
+//     font-size: 1em;
+//   }
+//   font-family: Consolas, "courier new";
+//   color: crimson;
+//   padding: 1px;
+//   font-weight: bold;
+//   font-size: 1.2em;
+// }
 
 /* horizontal rule */
 
@@ -356,4 +370,8 @@ input[type="submit"],
 .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+
+pre > code {
+  font-size: 2em;
 }

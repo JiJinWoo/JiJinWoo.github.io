@@ -60,4 +60,4 @@ This computation **recovers** the **identity mapping**. You can put these values
 
 ## Conclusion
 
-So far, we've looked at how batch normalization works and why we use it. For further reading, reference the [[Loffe, Szegedy., 2015]](https://arxiv.org/pdf/1502.03167.pdf)
+So far, we've looked at how batch normalization works and why we use it. For further reading, reference the [Loffe, Szegedy., 2015](https://arxiv.org/pdf/1502.03167.pdf)
