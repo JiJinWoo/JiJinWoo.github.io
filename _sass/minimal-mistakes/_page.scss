@@ -631,6 +631,12 @@ h6 {
 
 code {
   span {
-    font-size: 1.4em;
+    font-size: 1em;
   }
+  font-family: Consolas, "courier new";
+  color: crimson;
+  padding: 2px;
+  // font-size: 105%;
+  font-weight: bold;
+  font-size: 1.4em;
 }
