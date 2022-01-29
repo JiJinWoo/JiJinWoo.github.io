@@ -13,7 +13,7 @@ We've been hearing about the word `namespace` all the time. But what the heck is
 
 - A `namespace` is a mapping from `names` to `objects`. In python, namespaces are internally implemented as `dictionary`. The following are the examples of namespace
   - `built-in` namespace
-  - `global` namespace (smae as module namespace)
+  - `global` namespace $($same as module namespace$)$
   - `local` namespace
 - It's worth mentioning that `global` namespace is **writable** which mean you can modify it. However, you **cannot** modify the `local` namespace.
 
@@ -195,7 +195,7 @@ builtins.__dict__
 
 ### `global` namespace
 
-`globals()` keyword is a dictionary of the global(module) namespace. You can see the `__name__` that you might've seen in my program but didn't exactly know where it comes from! When you execute the file, that file acts like the **entry point** so its `__name__` is default set to `__main__`. That's why there're `if __name__ == '__main__:...` codes out there!
+`globals()` keyword is a dictionary of the global$($module$)$ namespace. You can see the `__name__` that you might've seen in my program but didn't exactly know where it comes from! When you execute the file, that file acts like the **entry point** so its `__name__` is default set to `__main__`. That's why there're `if __name__ == '__main__:...` codes out there!
 
 ```python
 globals()
@@ -242,7 +242,7 @@ As you can see, you can actually modify the global namespace
 Local namespace is binded to the current namespace that your code is actually in. The local namespace for a **function** is created when the function is called, and removed when it returns or an execption occurs
 To retrieve it, use `locals()`.
 
-Side Note: if you execute `locals()` in the global (or module) namespace, it does the exact same thing as `globals()`
+Side Note: if you execute `locals()` in the global $($or module$)$ namespace, it does the exact same thing as `globals()`
 
 ```python
 def local_fn():
@@ -418,11 +418,12 @@ print("In global scope:", spam) # out: global spam
     After global assignment: nonlocal spam
     In global scope: global spam
 
-vars([object])
+## `vars(object)`
+
 Return the **dict** attribute for a module, class, instance, or any other object with a **dict** attribute.
 
-Objects such as modules and instances have an updateable **dict** attribute; however, other objects may have write restrictions on their **dict** attributes (for example, classes use a types.MappingProxyType to prevent direct dictionary updates).
+Objects such as modules and instances have an updateable **dict** attribute; however, other objects may have write restrictions on their **dict** attributes $($for example, classes use a types.MappingProxyType to prevent direct dictionary updates$)$.
 
-Without an argument, vars() acts like locals(). Note, the locals dictionary is only useful for reads since updates to the locals dictionary are ignored.
+Without an argument, `vars()` acts like `locals()`. Note, the locals dictionary is only useful for reads since updates to the locals dictionary are ignored.
 
 A TypeError exception is raised if an object is specified but it doesn’t have a **dict** attribute (for example, if its class defines the **slots** attribute).
