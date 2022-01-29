@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Strings / Advanced Functions"
+title: "Strings / Advanced Functions"
 categories: Python
 tag: [python]
 author_profile: true
@@ -34,7 +34,7 @@ sidebar_main: true
     }
 
     table.dataframe tr:hover {
-      background: #b8d1f3; 
+      background: #b8d1f3;
     }
 
     .output_prompt {
@@ -54,33 +54,31 @@ sidebar_main: true
       white-space: pre;
     }
 
-  .dataframe tbody tr th:only-of-type {
-      vertical-align: middle;
-  }
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
 
-  .dataframe tbody tr th {
-      vertical-align: top;
-  }
+.dataframe tbody tr th {
+vertical-align: top;
+}
 
-  .dataframe thead th {
-      text-align: center !important;
-      padding: 8px;
-  }
+.dataframe thead th {
+text-align: center !important;
+padding: 8px;
+}
 
-  .page__content p {
-      margin: 0 0 0px !important;
-  }
+.page\_\_content p {
+margin: 0 0 0px !important;
+}
 
-  .page__content p > strong {
-    font-size: 0.8rem !important;
-  }
+.page\_\_content p > strong {
+font-size: 0.8rem !important;
+}
 
   </style>
 </head>
 
-
 ## String
-
 
 - store <code>char</code> data in sequence
 
@@ -90,13 +88,9 @@ sidebar_main: true
 
 - converts `bit` to `char` or vice-versa according to rules (UTF-8, ASCII, etc)
 
-
 * `int` = `4byte` = $-2^{31}\sim2^{31} - 1$
 
-
 #### Slicing `a[::]`
-
-
 
 ```python
 a = [1,2,3,4,5]
@@ -112,9 +106,8 @@ print(s[::-1])
 [1, 4]
 nosaj olleh
 </pre>
+
 #### `a.upper()` `a.lower()`
-
-
 
 ```python
 a = 'xYzDfSFs'
@@ -126,9 +119,8 @@ print(a.lower())
 XYZDFSFS
 xyzdfsfs
 </pre>
+
 #### `a.capitalize()`: capitalize first char
-
-
 
 ```python
 a = 'xYzDfSFs'
@@ -138,9 +130,8 @@ a.capitalize()
 <pre>
 'Xyzdfsfs'
 </pre>
+
 #### `a.count('xyz')`: # of 'abc' in a
-
-
 
 ```python
 a = 'xyzdfsfasfxyzxyz'
@@ -150,9 +141,8 @@ a.count('xyz')
 <pre>
 3
 </pre>
+
 #### `a.find('xyz')`: return offset of 'xyz'
-
-
 
 ```python
 a = 'aaaxyzdfsfasfxyzxyz'
@@ -162,9 +152,8 @@ a.find('xyz')
 <pre>
 3
 </pre>
+
 #### `a.startswith('xyz')` `a.endswith('xyz')`: whether a starts/ends with 'xyz'
-
-
 
 ```python
 a = 'xyzdfsfasfxyzxyz'
@@ -176,9 +165,8 @@ print(a.endswith('xyz'))
 True
 True
 </pre>
+
 #### `r""`: raw string
-
-
 
 ```python
 sentence = 'hello it\'s me'
@@ -191,9 +179,8 @@ print(raw_sentence)
 hello it's me
 hello it\'s me
 </pre>
+
 #### `a.strip()`: remove space front/back
-
-
 
 ```python
 a = "    hello    "
@@ -203,9 +190,8 @@ a.strip()
 <pre>
 'hello'
 </pre>
+
 #### `copy.deepcopy()`
-
-
 
 ```python
 import copy
@@ -220,9 +206,8 @@ print(b)
 [[1, 2, 3], [4, 5, 6]]
 [[100, 2, 3], [4, 5, 6]]
 </pre>
+
 ### Lab 1
-
-
 
 ```python
 !wget https://raw.githubusercontent.com/TeamLab/introduction_to_python_TEAMLAB_MOOC/master/code/6/yesterday.txt
@@ -288,12 +273,10 @@ Oh, I believe in yesterday...
 6
 0
 </pre>
+
 ## Advanced Function Concepts
 
-
 #### Call by `Value`
-
-
 
 ```python
 def change(x):
@@ -308,11 +291,10 @@ print(x) # unchanged
 <pre>
 10
 </pre>
+
 #### Call by `Object Reference`
 
-* `Address of object` is passed
-
-
+- `Address of object` is passed
 
 ```python
 def modify(arr): # address of object s is passed as parameter
@@ -327,12 +309,10 @@ print(s)
 <pre>
 [0, 1]
 </pre>
+
 ## Scoping
 
-
 #### Use `global` keyword to use global variable in function
-
-
 
 ```python
 def tester():
@@ -349,9 +329,8 @@ print(x) # changed!
 10
 10
 </pre>
+
 ## Function type hints
-
-
 
 ```python
 def test(x: int) -> str:
@@ -365,12 +344,10 @@ print(type(test(10)))
 20
 <class 'str'>
 </pre>
+
 ## docstring
 
-
 -> try out docstring extension in vscode!
-
-
 
 ```python
 def add(a: int, b: int) -> int:
@@ -381,7 +358,7 @@ def add(a: int, b: int) -> int:
         - a: int
         - b: int
     '''
-    
+
     return a + b
 
 print(add(3,10))
@@ -392,4 +369,5 @@ print(add(3,10))
 </pre>
 
 ```python
+
 ```

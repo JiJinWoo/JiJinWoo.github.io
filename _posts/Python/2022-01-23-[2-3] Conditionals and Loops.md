@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Conditionals and Loops"
+title: "Conditionals and Loops"
 categories: Python
 tag: [python]
 author_profile: true
@@ -34,7 +34,7 @@ sidebar_main: true
     }
 
     table.dataframe tr:hover {
-      background: #b8d1f3; 
+      background: #b8d1f3;
     }
 
     .output_prompt {
@@ -54,39 +54,35 @@ sidebar_main: true
       white-space: pre;
     }
 
-  .dataframe tbody tr th:only-of-type {
-      vertical-align: middle;
-  }
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
 
-  .dataframe tbody tr th {
-      vertical-align: top;
-  }
+.dataframe tbody tr th {
+vertical-align: top;
+}
 
-  .dataframe thead th {
-      text-align: center !important;
-      padding: 8px;
-  }
+.dataframe thead th {
+text-align: center !important;
+padding: 8px;
+}
 
-  .page__content p {
-      margin: 0 0 0px !important;
-  }
+.page\_\_content p {
+margin: 0 0 0px !important;
+}
 
-  .page__content p > strong {
-    font-size: 0.8rem !important;
-  }
+.page\_\_content p > strong {
+font-size: 0.8rem !important;
+}
 
   </style>
 </head>
 
-
 ## Compare Operators
-
 
 <code>x == y</code>: value
 
-<code>x is y</code>: value and memory 
-
-
+<code>x is y</code>: value and memory
 
 ```python
 a = [1, 2, 3, 4, 5]
@@ -99,9 +95,8 @@ print(a is b)
 True
 False
 </pre>
+
 **[Important]** There's reserved memory space -5 ~ 256 (shared memory)
-
-
 
 ```python
 a = 256
@@ -126,17 +121,14 @@ print(a is b)
 True
 False
 </pre>
+
 ## True and False
 
+- <code>int</code>: <code>1</code> **True**, else False
 
-* <code>int</code>: <code>1</code> **True**, else False
-
-* <code>str</code>: <code>""</code> **False**, else True
-
+- <code>str</code>: <code>""</code> **False**, else True
 
 <code>all()</code> <code>any()</code>
-
-
 
 ```python
 b = [True, False, True]
@@ -148,11 +140,10 @@ print(any(b)) # OR - True of any is true
 False
 True
 </pre>
+
 ## for
 
 <code>for i in range(x,y,z)</code>: increment by <code>z</code> from <code>x</code> to <code>y-1</code>
-
-
 
 ```python
 for i in range(2, 10, 2): # [2,10) +2
@@ -169,4 +160,5 @@ for i in range(11, 1, -2): # [11, 1) -2
 </pre>
 
 ```python
+
 ```
