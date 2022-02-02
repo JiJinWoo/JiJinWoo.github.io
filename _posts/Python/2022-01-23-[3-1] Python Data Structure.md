@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Data Structures"
+title: "[Python] Data Structures"
 categories: Python
 tag: [python]
 author_profile: true
@@ -34,7 +34,7 @@ sidebar_main: true
     }
 
     table.dataframe tr:hover {
-      background: #b8d1f3; 
+      background: #b8d1f3;
     }
 
     .output_prompt {
@@ -54,34 +54,31 @@ sidebar_main: true
       white-space: pre;
     }
 
-  .dataframe tbody tr th:only-of-type {
-      vertical-align: middle;
-  }
+.dataframe tbody tr th:only-of-type {
+vertical-align: middle;
+}
 
-  .dataframe tbody tr th {
-      vertical-align: top;
-  }
+.dataframe tbody tr th {
+vertical-align: top;
+}
 
-  .dataframe thead th {
-      text-align: center !important;
-      padding: 8px;
-  }
+.dataframe thead th {
+text-align: center !important;
+padding: 8px;
+}
 
-  .page__content p {
-      margin: 0 0 0px !important;
-  }
+.page\_\_content p {
+margin: 0 0 0px !important;
+}
 
-  .page__content p > strong {
-    font-size: 0.8rem !important;
-  }
+.page\_\_content p > strong {
+font-size: 0.8rem !important;
+}
 
   </style>
 </head>
 
-
 ### Stack
-
-
 
 ```python
 stk = []
@@ -97,9 +94,8 @@ print(stk)
 [0, 1, 2]
 [0, 1]
 </pre>
+
 ## Queue
-
-
 
 ```python
 q = []
@@ -115,15 +111,13 @@ print(q)
 [1, 2, 3]
 [2, 3]
 </pre>
+
 ## Set
-
-
 
 ```python
 s = set([1,2,3])
 s2 = {4,5,6,6}
 ```
-
 
 ```python
 s.add(4)
@@ -180,14 +174,12 @@ print(s1 - s2)
 {1}
 {1}
 </pre>
+
 ## Dict
-
-
 
 ```python
 d = {'jason':82, 'marry':17, 'jon':32}
 ```
-
 
 ```python
 print(d.items())
@@ -239,9 +231,8 @@ print(d)
 <pre>
 {'marry': 17}
 </pre>
+
 ## collections module
-
-
 
 ```python
 from collections import deque
@@ -252,8 +243,6 @@ from collections import namedtuple
 ```
 
 ## deque
-
-
 
 ```python
 deq = deque()
@@ -305,9 +294,8 @@ print(deq)
 deque([2, 1, 3])
 deque([2, 1, 3, 1, 1, 2, 3])
 </pre>
+
 ## OrderedDict (obselete)
-
-
 
 ```python
 d = OrderedDict({'jason':82, 'zarry':17, 'aon':32})
@@ -330,18 +318,14 @@ jason 82
 zarry 17
 aon 32
 </pre>
+
 ## defaultdict
 
-
-
 frequency 사용할때도 유용함
-
-
 
 ```python
 d = defaultdict(lambda: 0) # default (기본값) 설정
 ```
-
 
 ```python
 d['first'] # 아무것도 없는데 설정됨
@@ -350,11 +334,10 @@ d['first'] # 아무것도 없는데 설정됨
 <pre>
 0
 </pre>
+
 ## Counter
 
 -> set 연산도 가능
-
-
 
 ```python
 c = Counter()
@@ -382,9 +365,8 @@ list(c.elements())
 <pre>
 ['a', 'a', 'b', 'b', 'b', 'c', 'c', 'c', 'c', 'c', 'c']
 </pre>
+
 ## namedtuple
-
-
 
 ```python
 Point = namedtuple('Point', ['x','y'])

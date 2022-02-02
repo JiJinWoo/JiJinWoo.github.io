@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "File / Exception / Logging"
+title: "[Python] File / Exception / Logging"
 categories: Python
 tag: [python]
 author_profile: true

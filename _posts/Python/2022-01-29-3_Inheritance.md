@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "OOP: Inheritance"
+title: "[Python] OOP: Inheritance"
 categories: ["Python"]
 tag: [oop, inheritance, python]
 author_profile: true

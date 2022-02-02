@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Batch Normalization"
+title: "[DL] Batch Normalization"
 categories: ["deeplearning"]
 tag: [deeplearning, batch-normalization]
 ---
@@ -20,7 +20,7 @@ This is the key point of batch normalization. If we apply **zero-centering** and
 ## Zero-centering and Normalization
 
 Let $x^{(k)}$ be the activation vector of the given layer. Then, we can achieve the above by,
-\[ \hat{x}^{(k)}=\frac{x^{(k)} - E[x]}{\sqrt{Var(x)}} \]
+\[[ \hat{x}^{(k)}=\frac{x^{(k)} - E[x]}{\sqrt{Var(x)}} \]]
 
 ## Where to apply?
 
@@ -42,13 +42,13 @@ So, why don't we let our almighty neural network to handle with that by giving f
 
 This sounds like a reasonable strategy. The way to achieve this flexibility is to introduce **learnable parameters** that can control the values of $\hat{x}^{(k)}$:
 
-\[ y^{(k)} = \gamma^{(k)}\hat{x}^{(k)}+\beta^{(k)} \]
+\[[ y^{(k)} = \gamma^{(k)}\hat{x}^{(k)}+\beta^{(k)} \]]
 
 By setting learnable parameters, we can let the network to decide **how much** it will scale and shift the normalized values $\hat{x^{(k)}}$.
 
 One cool thing is if our almighty network decides that it's the best **NOT** to make the layer activations to unit gaussian, then it can simply recover by setting,
 
-\[ \gamma^{(k)} = \sqrt{Var[x^{(k)}]} \\\ \beta^{(k)} = E{[x^{(k)}]} \]
+\[[ \gamma^{(k)} = \sqrt{Var[x^{(k)}]} \\\ \beta^{(k)} = E{[x^{(k)}]} \]]
 
 This computation **recovers** the **identity mapping**. You can put these values into the $\hat{y^{(k)}}$ equation above to check this out.
 

@@ -17,7 +17,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "deeplearning" %}
-                        <li><a href="/categories/deeplearning" class="">Deep Learning (({{category[1].size}}))</a></li>
+                        <li><a href="/categories/deeplearning" class="">Deep Learning ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "paper" %}
+                        <li><a href="/categories/paper" class="">Papers ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -33,22 +40,22 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Python" %}
-                        <li><a href="/categories/python" class="">Python (({{category[1].size}}))</a></li>
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Pytorch" %}
-                        <li><a href="/categories/pytorch" class="">Pytorch (({{category[1].size}}))</a></li>
+                        <li><a href="/categories/pytorch" class="">Pytorch ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Algorithm</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Leetcode" %}
-                        <li><a href="/categories/leetcode" class="">Leetcode (({{category[1].size}}))</a></li>
+                    {% if category[0] == "dp" %}
+                        <li><a href="/categories/dp" class="">Dynamic Programming ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

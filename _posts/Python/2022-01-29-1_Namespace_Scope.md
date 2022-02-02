@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Namespace and Scope"
+title: "[Python] Namespace and Scope"
 categories: ["Python"]
 tag: [namepsace, scope, python]
 author_profile: true

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Function and Console I/O"
+title: "[Python] Function and Console I/O"
 categories: Python
 tag: [python]
 author_profile: true

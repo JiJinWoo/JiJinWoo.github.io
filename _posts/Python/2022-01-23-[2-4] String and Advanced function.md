@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Strings / Advanced Functions"
+title: "[Python] Strings / Advanced Functions"
 categories: Python
 tag: [python]
 author_profile: true

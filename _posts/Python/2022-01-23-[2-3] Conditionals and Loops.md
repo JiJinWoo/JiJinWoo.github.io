@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Conditionals and Loops"
+title: "[Python] Conditionals and Loops"
 categories: Python
 tag: [python]
 author_profile: true
