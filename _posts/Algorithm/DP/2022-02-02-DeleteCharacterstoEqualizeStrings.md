@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Delete Characters to Equalize Strings.cpp"
+title: "[DP]Delete Characters to Equalize Strings"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Shortest Common Supersequence.cpp"
+title: "[DP]Shortest Common Supersequence"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Largest Elements in Their Row and Column.cpp"
+title: "[DP]Largest Elements in Their Row and Column"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

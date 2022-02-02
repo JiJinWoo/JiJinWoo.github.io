@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] maximum sum increasing subsequence.cpp"
+title: "[DP]maximum sum increasing subsequence"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

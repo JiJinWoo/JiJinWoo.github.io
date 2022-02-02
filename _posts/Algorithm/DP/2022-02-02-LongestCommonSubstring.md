@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Longest Common Substring.cpp"
+title: "[DP]Longest Common Substring"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

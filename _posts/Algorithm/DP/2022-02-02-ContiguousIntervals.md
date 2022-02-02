@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Contiguous Intervals.cpp"
+title: "[DP]Contiguous Intervals"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

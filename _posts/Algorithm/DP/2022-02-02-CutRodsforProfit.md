@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Cut Rods for Profit.cpp"
+title: "[DP]Cut Rods for Profit"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] #392 Is Subsequence.cpp"
+title: "[DP]#392 Is Subsequence"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

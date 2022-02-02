@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] #121 Best Time to Buy and Sell Stock.cpp"
+title: "[DP]#121 Best Time to Buy and Sell Stock"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

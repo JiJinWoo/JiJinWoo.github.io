@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Perfect Squares.cpp"
+title: "[DP]Perfect Squares"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

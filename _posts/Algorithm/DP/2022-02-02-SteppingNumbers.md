@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Stepping Numbers.cpp"
+title: "[DP]Stepping Numbers"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

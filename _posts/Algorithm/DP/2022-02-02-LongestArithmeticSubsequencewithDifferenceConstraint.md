@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Longest Arithmetic Subsequence with Difference Constraint.cpp"
+title: "[DP]Longest Arithmetic Subsequence with Difference Constraint"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

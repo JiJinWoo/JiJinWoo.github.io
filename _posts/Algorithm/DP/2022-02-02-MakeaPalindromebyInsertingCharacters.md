@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Make a Palindrome by Inserting Characters.cpp"
+title: "[DP]Make a Palindrome by Inserting Characters"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

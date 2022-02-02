@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] #698 Partition to K Equal Sum Subsets.cpp"
+title: "[DP]#698 Partition to K Equal Sum Subsets"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

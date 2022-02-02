@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Making Change Sequel.cpp"
+title: "[DP]Making Change Sequel"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

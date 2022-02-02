@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Increasing Digits.cpp"
+title: "[DP]Increasing Digits"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

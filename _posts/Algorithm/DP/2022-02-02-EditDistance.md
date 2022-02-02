@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Edit Distance.cpp"
+title: "[DP]Edit Distance"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

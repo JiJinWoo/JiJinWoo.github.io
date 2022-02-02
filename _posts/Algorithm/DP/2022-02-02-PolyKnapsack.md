@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP] Poly Knapsack.cpp"
+title: "[DP]Poly Knapsack"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

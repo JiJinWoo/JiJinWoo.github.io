@@ -1,13 +1,14 @@
 ---
 layout: single
-title: "[DP] #64 Minimum Path Sum.cpp"
+title: "[DP]#64 Minimum Path Sum"
 categories: ["dp"]
 tag: [algorithm, dp]
 ---
+
 ```cpp
 class Solution {
 public:
-    
+
     int minPathSum(vector<vector<int>>& grid) {
         int n = grid.size();
         if(n==0) return 0;
