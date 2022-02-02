@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Longest Common Substring"
+title: "[DP] Longest Common Substring."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

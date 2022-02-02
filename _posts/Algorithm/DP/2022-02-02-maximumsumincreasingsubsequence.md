@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]maximum sum increasing subsequence"
+title: "[DP] maximum sum increasing subsequence."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Minimum Sum Subsequence three consecutive"
+title: "[DP] Minimum Sum Subsequence three consecutive."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

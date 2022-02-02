@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Perfect Squares"
+title: "[DP] Perfect Squares."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

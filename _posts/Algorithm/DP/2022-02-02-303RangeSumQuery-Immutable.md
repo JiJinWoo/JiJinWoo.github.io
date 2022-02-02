@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]#303 Range Sum Query - Immutable"
+title: "[DP] #303 Range Sum Query - Immutable."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

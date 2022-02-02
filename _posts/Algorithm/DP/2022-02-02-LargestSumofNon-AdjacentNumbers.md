@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Largest Sum of Non-Adjacent Numbers"
+title: "[DP] Largest Sum of Non-Adjacent Numbers."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

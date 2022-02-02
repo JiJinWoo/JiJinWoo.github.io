@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Decode Message"
+title: "[DP] Decode Message."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

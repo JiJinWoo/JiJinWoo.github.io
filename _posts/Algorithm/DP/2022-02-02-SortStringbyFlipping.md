@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Sort String by Flipping"
+title: "[DP] Sort String by Flipping."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

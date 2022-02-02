@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Minimum Dropping Path Sum With Column Distance Constraint"
+title: "[DP] Minimum Dropping Path Sum With Column Distance Constraint."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

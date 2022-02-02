@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Longest Fibonacci Subsequence"
+title: "[DP] Longest Fibonacci Subsequence."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

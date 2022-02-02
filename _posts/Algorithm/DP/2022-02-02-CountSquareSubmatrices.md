@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Count Square Submatrices"
+title: "[DP] Count Square Submatrices."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

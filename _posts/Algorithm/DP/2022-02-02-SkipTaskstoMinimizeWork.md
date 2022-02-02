@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Skip Tasks to Minimize Work"
+title: "[DP] Skip Tasks to Minimize Work."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

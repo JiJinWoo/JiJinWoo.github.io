@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Labyrinthian Possibilities"
+title: "[DP] Labyrinthian Possibilities."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

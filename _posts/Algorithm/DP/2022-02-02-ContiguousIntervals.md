@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Contiguous Intervals"
+title: "[DP] Contiguous Intervals."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

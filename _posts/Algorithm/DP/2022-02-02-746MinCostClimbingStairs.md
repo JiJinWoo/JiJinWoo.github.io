@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]#746 Min Cost Climbing Stairs"
+title: "[DP] #746 Min Cost Climbing Stairs."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---

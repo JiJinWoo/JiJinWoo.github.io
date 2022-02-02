@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[DP]Edit Distance"
+title: "[DP] Edit Distance."
 categories: ["dp"]
 tag: [algorithm, dp]
 ---
