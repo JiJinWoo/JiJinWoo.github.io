@@ -577,11 +577,11 @@ body {
 .wide {
   .page {
     @include breakpoint($large) {
-      padding-right: 0;
+      padding-right: 2em;
     }
 
     @include breakpoint($x-large) {
-      padding-right: 0;
+      padding-right: 2em;
     }
   }
 
@@ -628,3 +628,8 @@ h6 {
   font-size: 0.5em;
   font-weight: bolder;
 }
+
+// .page {
+//   margin-right: 2em;
+//   margin-top: 2em;
+// }
