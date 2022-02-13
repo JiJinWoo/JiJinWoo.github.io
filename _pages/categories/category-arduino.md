@@ -1,11 +1,11 @@
 ---
-title: "Tree"
+title: "arduino"
 layout: archive
-permalink: categories/tree
+permalink: categories/arduino
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.tree %}
+{% assign posts = site.categories.arduino %}
 
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %}{% endfor %}

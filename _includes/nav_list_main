@@ -12,152 +12,15 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">AI</span>
+        <span class="nav__sub-title">IoT</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "deeplearning" %}
-                        <li><a href="/categories/deeplearning" class="">Deep Learning ({{category[1].size}})</a></li>
+                    {% if category[0] == "arduino" %}
+                        <li><a href="/categories/arduino" class="">Arduino ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "paper" %}
-                        <li><a href="/categories/paper" class="">Papers ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            {% comment %} <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for category in site.categories %}
-                    {% if category[0] == "AITech" %}
-                        <li><a href="/categories/aitech" class="">AI Tech (({{category[1].size}}))</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul> {% endcomment %}
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Python" %}
-                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Pytorch" %}
-                        <li><a href="/categories/pytorch" class="">Pytorch ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">Algorithm</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "dp" %}
-                        <li><a href="/categories/dp" class="">Dynamic Programming ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "tree" %}
-                        <li><a href="/categories/tree" class="">Tree ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "array" %}
-                        <li><a href="/categories/array" class="">Array ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "bfsdfs" %}
-                        <li><a href="/categories/bfsdfs" class="">BFS/DFS ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "hashtable" %}
-                        <li><a href="/categories/hashtable" class="">Hash Table ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "shortestpath" %}
-                        <li><a href="/categories/shortestpath" class="">Shortest Path ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "linkedlist" %}
-                        <li><a href="/categories/linkedlist" class="">Linked List ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "slidingwindow" %}
-                        <li><a href="/categories/slidingwindow" class="">Sliding Window ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "binarysearch" %}
-                        <li><a href="/categories/binarysearch" class="">Binary Search ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "math" %}
-                        <li><a href="/categories/math" class="">Math ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "datastructure" %}
-                        <li><a href="/categories/datastructure" class="">Data Structures ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "backtracking" %}
-                        <li><a href="/categories/backtracking" class="">Backtracking ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "graph" %}
-                        <li><a href="/categories/graph" class="">Graph ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "string" %}
-                        <li><a href="/categories/string" class="">String ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "bitoperation" %}
-                        <li><a href="/categories/bitoperation" class="">Bit operation ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
       </li>
   </ul>
 </nav>
