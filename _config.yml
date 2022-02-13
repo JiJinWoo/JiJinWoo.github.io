@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name: "Jinwoo Ji"
-  avatar: "/assets/images/IMG_0922.JPG"
+  avatar: "/assets/images/image.jpg"
   # bio: "What are you waiting for?"
   location: "South Korea"
   email: "cream5343@gmail.com"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jasonlee-cp"
+      url: "https://github.com/JiJinWoo"
     - label: "Instagram"
       icon: "fab fa-fw fia-instagram"
       # url: "https://instagram.com/"
