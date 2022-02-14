@@ -8,6 +8,7 @@ sidebar_main: true
 ---
 
 
+
 > **설명**
 
 LED와 SW, LCD를 이용해서 간단한 두더지 잡기 게임을 구현한다.
@@ -19,15 +20,17 @@ LED와 SW, LCD를 이용해서 간단한 두더지 잡기 게임을 구현한다
 
 > __사용한 부품__
 
-| 부품명 | 수량 | 설명 |
-|---|---|---|
-|아두이노 우노|1||
-|LED|3||
-|SW|3||
-|220Ω 저항|4|
+|부품명|수량|설명|
+|:---:|:---:|---|
+|아두이노 우노|1|  |
+|LED|3|  |
+|SW|3|  |
+|220Ω 저항|4|  |
 |LCD|1|LCM1602|
 |가변저항|1|1~2KΩ으로 교체가능|
+
 ---
+
 > **[회로도]하드웨어 설계**
 
 LCD마다 Data sheet가 다르기 때문에 해당하는 Data sheet에 맞게 연결해야 한다.
@@ -36,11 +39,13 @@ SW는 소스코드에서 PULLUP 회로로 구성한다.
 ![circuit](https://raw.githubusercontent.com/JiJinWoo/JiJinWoo.github.io/master/assets/images/dudogigame.PNG)
 
 
-|LCD(LCM1602A)| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|LCD(LCM1602A)|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |핀 명|VSS|VDD|V0|RS|R/W|E|DB0|DB1|DB2|DB3|DB4|DB5|DB6|DB7|A|K|
-|아두이노 핀|GND|VCC| |2|3|4|||||5|6|7|8|VCC|GND|
+|아두이노 핀|GND|VCC| |2|3|4|  |  |  |  |5|6|7|8|VCC|GND|
+
 ---
+
 > **[소스코드]소프트웨어 설계**
 
 LCD를 좀 더 쉽게 사용하기 위해 ```LiquidCrystal.h``` 헤더파일을 설치해준다.
@@ -52,6 +57,8 @@ LCD를 좀 더 쉽게 사용하기 위해 ```LiquidCrystal.h``` 헤더파일을 
 
 ```LiquidCrystal.h``` 의 함수는  아두이노 [**Reference**](https://www.arduino.cc/en/Reference/LiquidCrystal)에서 자세한 사항을 확인할 수 있다.
 ![LCD](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/LCDIMAGE.PNG?raw=true)
+
+
 
 LED, SW, LCD의 핀 번호들과 게임에서 사용할 변수를 전역변수로 설정한다.
 ```cpp
@@ -67,6 +74,7 @@ int count = 0;  //두더지 잡은 수
 int totalGame = 10; //총 게임진행 횟수
 int ending = 0;	//게임 종료 변수
 ```
+
 
 SW를 사용할 땐 PULL-UP/PULL-DOWN회로를 직접 구성해서 할 수도 있지만 아두이노에선 ```pinMode()``` 코드로 구현된 ```INPUT_PULLUP```을 사용할 수 있다.
 ```cpp
@@ -114,6 +122,8 @@ void loop(){
   delay(1000);	//다음 두더지 선정 대기시간
 }
 ```
+
+
 반복되는 게임 진행을 위해```void dudogi()``` 함수를 만들어 사용한다.
 ```cpp
 void dudogi(){
@@ -168,6 +178,7 @@ void showResult(){	//게임이 끝나고 결과를 LCD에 표시해주는 함수
 }
 ```
 ---
+
 > **참고사항**
 
 * [**코코아팹**](https://kocoafab.cc/make/view/443) 사이트를 참조했다.
