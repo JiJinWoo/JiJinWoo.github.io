@@ -180,7 +180,7 @@ void showResult(){	//게임이 끝나고 결과를 LCD에 표시해주는 함수
 
 > **참고사항**
 
-* <span style ="color:red">[**코코아팹**](https://kocoafab.cc/make/view/443) 사이트를 참조했다.
+* [**코코아팹**](https://kocoafab.cc/make/view/443) 사이트를 참조했다.
 
 * LED를 디지털 핀에 연결해서 사용해도 무관하다. 여기서 아날로그 핀으로 연결한 이유는 LCD와 SW를 사용하게 되면서 디지털 핀의 개수가 부족하다고 판단했다.
 
