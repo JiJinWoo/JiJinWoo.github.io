@@ -7,7 +7,6 @@ author_profile: true
 sidebar_main: true
 ---
 
-
 > **설명**
 
 LED와 SW, LCD를 이용해서 간단한 두더지 잡기 게임을 구현한다.
@@ -47,7 +46,7 @@ SW는 소스코드에서 PULLUP 회로로 구성한다.
 
 > **[소스코드]소프트웨어 설계**
 
-LCD를 좀 더 쉽게 사용하기 위해 ```LiquidCrystal.h``` 헤더파일을 설치해준다.
+LCD를 쉽게 사용하기 위해 ```LiquidCrystal.h``` 헤더파일을 설치해준다.
 
 
 아두이노 IDE -> 스케치 ->  라이브러리 포함하기 -> 라이브러리 관리 -> LCD검색 
@@ -91,12 +90,12 @@ void loop(){
   if(ending == 0){	//게임종료를 위한 변수
     if(digitalRead(Sw[0]) == LOW){	//Sw[0]을 게임시작 스위치로 설정 
       ending = 1;
-      gameStart();
-      startLcd();
+      gameStart();	//함수호출
+      startLcd();	//함수호출
     }
   }
   else if(totalGame == 0){	//게임종료
-    endLcd();
+    endLcd();	//함수호출
     ending = 0;
   }
   else{
@@ -104,7 +103,7 @@ void loop(){
     switch(rand_num){
       case 0:
       dudogi();
-      totalGame--;
+      totalGame--;	//게임 진행횟수 감소
       break;
 
       case 1:
@@ -127,8 +126,8 @@ void loop(){
 ```cpp
 void dudogi(){
   for(int i = 0; i < 20; i++){
-    if(totalGame == 0){	//모든 게임이 진행됐다면 종료
-      break;
+    if(totalGame == 0){	
+      break;	//모든 게임이 진행됐다면 종료
     }
     else if(digitalRead(Sw[rand_num]) == LOW){
       analogWrite(Led[rand_num], 0);
@@ -139,7 +138,7 @@ void dudogi(){
     }
     else{
       analogWrite(Led[rand_num], 255);
-      delay(100);
+      delay(100);	//0.1초마다 스위치가 눌러졌는지 확인
       analogWrite(Led[rand_num], 0);
     }
   }
