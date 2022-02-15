@@ -65,12 +65,12 @@ LED, SW, LCD의 핀 번호들과 게임에서 사용할 변수를 전역변수�
 
 LiquidCrystal lcd(2, 3, 4, 5, 6, 7, 8);	//2~8번 핀을 사용하기 위한 LCD객체생성
 
-int Led[] = {A0, A1, A2};	//두더지를 A0~A2 핀으로 설정
-int Sw[] = {9, 10, 11};		//망치를 9~11번 핀으로 설정
+int led[] = {A0, A1, A2};	//두더지를 A0~A2 핀으로 설정
+int sw[] = {9, 10, 11};		//망치를 9~11번 핀으로 설정
 
 int rand_num; //무작위로 켜지는 Led와 Sw 번호
 int count = 0;  //두더지 잡은 수
-int totalGame = 10; //총 게임진행 횟수
+int total_game = 10; //총 게임진행 횟수
 int ending = 0;	//게임 종료 변수
 ```
 
@@ -79,8 +79,8 @@ SW를 사용할 땐 PULL-UP/PULL-DOWN회로를 직접 구성해서 할 수도 �
 ```cpp
 void setup(){
   for(int i = 0; i < 3; i++){
-    pinMode(Led[i], OUTPUT);	//LED에 연결된 핀들을 OUPUT으로 설정
-    pinMode(Sw[i], INPUT_PULLUP);	//SW에 연결된 핀들을 INPUT_PULLUP으로 설정 
+    pinMode(led[i], OUTPUT);	//LED에 연결된 핀들을 OUPUT으로 설정
+    pinMode(sw[i], INPUT_PULLUP);	//SW에 연결된 핀들을 INPUT_PULLUP으로 설정 
   }
   lcd.begin(16,2);	//LCD화면에 16개의 셀을 2줄로 출력하도록 설정
   lcd.clear();	//LCD 초기화
@@ -89,13 +89,13 @@ void setup(){
 ```cpp
 void loop(){
   if(ending == 0){	//게임종료를 위한 변수
-    if(digitalRead(Sw[0]) == LOW){	//Sw[0]을 게임시작 스위치로 설정 
+    if(digitalRead(sw[0]) == LOW){	//Sw[0]을 게임시작 스위치로 설정 
       ending = 1;
       gameStart();	//함수호출
       startLcd();	//함수호출
     }
   }
-  else if(totalGame == 0){	//게임종료
+  else if(total_game == 0){	//게임종료
     endLcd();	//함수호출
     ending = 0;
   }
@@ -104,17 +104,17 @@ void loop(){
     switch(rand_num){
       case 0:
       dudogi();
-      totalGame--;	//게임 진행횟수 감소
+      total_game--;	//게임 진행횟수 감소
       break;
 
       case 1:
       dudogi();
-      totalGame--;
+      total_game--;
       break;
 
       case 2:
       dudogi();
-      totalGame--;
+      total_game--;
       break;
     }
   }
@@ -127,20 +127,20 @@ void loop(){
 ```cpp
 void dudogi(){
   for(int i = 0; i < 20; i++){
-    if(totalGame == 0){	
+    if(total_game == 0){	
       break;	//모든 게임이 진행됐다면 종료
     }
-    else if(digitalRead(Sw[rand_num]) == LOW){
-      analogWrite(Led[rand_num], 0);
+    else if(digitalRead(sw[rand_num]) == LOW){
+      analogWrite(led[rand_num], 0);
       count++;	//두더지 잡은 수 증가
       lcd.setCursor(10, 1);	//LCD 화면 10번째 셀, 2번째 줄로 이동
       lcd.print(count);	//count 출력
       break;
     }
     else{
-      analogWrite(Led[rand_num], 255);
+      analogWrite(led[rand_num], 255);
       delay(100);	//0.1초마다 스위치가 눌러졌는지 확인
-      analogWrite(Led[rand_num], 0);
+      analogWrite(led[rand_num], 0);
     }
   }
 }
@@ -162,7 +162,7 @@ void gameStart(){	//게임이 시작될 때 LCD에 표시될 내용
 void showScore(){	//게임이 진행되는 상황을 LCD에 표시해주는 함수
   lcd.setCursor(0,0);
   lcd.print("Total : ");
-  lcd.print(totalGame);
+  lcd.print(total_game);
   lcd.setCursor(0,1);
   lcd.print("Success : ");
 }
