@@ -27,8 +27,8 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "arduino" %}
-                        <li><a href="/categories/arduino" class="">Arduino ({{category[1].size}})</a></li>
+                    {% if category[0] == "C++" %}
+                        <li><a href="/categories/C++" class="">C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
