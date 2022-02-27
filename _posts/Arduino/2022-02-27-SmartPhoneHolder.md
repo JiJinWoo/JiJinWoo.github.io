@@ -127,8 +127,12 @@ void loop(){
 
 > **참고사항**
 
-* Reference : 
+* Reference
+
+
 [**https://www.arduino.cc/reference/en/libraries/servo/**](https://www.arduino.cc/reference/en/libraries/servo/) 
+
+
 [**https://www.kocoafab.cc/make/view/520**](https://www.kocoafab.cc/make/view/520) 
 
 * 펜틸트 거치대만으로는 스마트폰의 무게를 감당하기 힘들다. 그렇기에 지탱이 잘되는 거치대를 이용한다면 더 실용적인 스마트폰 거치대를 만들 수 있다.
