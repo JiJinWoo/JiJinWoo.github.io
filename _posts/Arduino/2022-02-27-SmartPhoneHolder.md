@@ -9,6 +9,7 @@ sidebar_main: true
 
 
 
+
 > **개요**
 
 IoT를 구현하고 싶었기에 아이디어를 생각하다가 아두이노로 제어할 수 있는 스마트폰 거치대를 만들어 보기로 했다. 혹시나 하는 마음에 정보를 찾아봤는데 누군가 이미 구현을 해놓았다. 그래서 만들어진 소스코드를 참조해서 조이스틱으로 제어하는 스마트폰 거치대를 구현했다.
@@ -57,7 +58,7 @@ void loop(){
 }
 ```
 
-![circuit](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/x,y.PNG?raw=true)
+![circuit](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/blog/x,y.PNG?raw=true)
 
 ---
 
