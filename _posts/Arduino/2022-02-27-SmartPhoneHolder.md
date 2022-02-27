@@ -8,6 +8,7 @@ sidebar_main: true
 ---
 
 
+
 > **개요**
 
 IoT를 구현하고 싶었기에 아이디어를 생각하다가 아두이노로 제어할 수 있는 스마트폰 거치대를 만들어 보기로 했다. 혹시나 하는 마음에 정보를 찾아봤는데 누군가 이미 구현을 해놓았다. 그래서 만들어진 소스코드를 참조해서 조이스틱으로 제어하는 스마트폰 거치대를 구현했다.
@@ -28,7 +29,7 @@ IoT를 구현하고 싶었기에 아이디어를 생각하다가 아두이노로
 
 조이스틱(대체)은 5핀이라 가정한다.
 
-![circuit](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/%ED%9A%8C%EB%A1%9C%EB%8F%84.PNG?raw=true)
+![circuit](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/blog/%ED%9A%8C%EB%A1%9C%EB%8F%84.PNG?raw=true)
 
 ![image](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/blog/Merged_document.jpg?raw=true)
 서브모터는 팬틸트 거치대(SG90 프레임 거치대)로 고정시켰다.
