@@ -8,9 +8,6 @@ sidebar_main: true
 ---
 
 
-
-
-
 > **개요**
 
 IoT를 구현하고 싶었기에 아이디어를 생각하다가 조절할 수 있는 스마트폰 거치대를 만들어 보기로 했다. 혹시나 하는 마음에 정보를 찾아봤는데 누군가 이미 구현을 해놓았다. 그래서 만들어진 소스코드를 참조해서 조이스틱으로 제어하는 스마트폰 거치대를 구현했다.구현해본다. 
@@ -130,7 +127,10 @@ void loop(){
 > **참고사항**
 
 * Reference 
+
 [**https://www.arduino.cc/reference/en/libraries/servo/**](https://www.arduino.cc/reference/en/libraries/servo/) 
+
+
 [**https://www.kocoafab.cc/make/view/520**](https://www.kocoafab.cc/make/view/520) 
 
 * 펜틸트 거치대만으로는 스마트폰의 무게를 감당하기 힘들다. 그렇기에 지탱이 잘되는 거치대를 사용한다면 더 실용적인 스마트폰 거치대를 만들 수 있다.
