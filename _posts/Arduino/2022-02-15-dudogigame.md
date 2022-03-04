@@ -35,7 +35,7 @@ LED와 SW, LCD를 이용해서 간단한 두더지 잡기 게임을 구현한다
 LCD마다 Data sheet가 다르기 때문에 해당하는 Data sheet에 맞게 연결해야 한다.
 SW는 소스코드에서 PULLUP 회로로 구성한다.
 
-![circuit](https://raw.githubusercontent.com/JiJinWoo/JiJinWoo.github.io/master/assets/images/dudogigame.PNG)
+![circuit](https://raw.githubusercontent.com/JiJinWoo/JiJinWoo.github.io/master/assets/images/blog/dudogigame.PNG)
 
 
 |LCD(LCM1602A)|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|
