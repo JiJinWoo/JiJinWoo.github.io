@@ -55,7 +55,7 @@ LCD를 쉽게 사용하기 위해 ```LiquidCrystal.h``` 헤더파일을 설치�
 
 
 ```LiquidCrystal.h``` 의 함수는  아두이노 [**Reference**](https://www.arduino.cc/en/Reference/LiquidCrystal)에서 자세한 사항을 확인할 수 있다.
-![LCD](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/LCDIMAGE.PNG?raw=true)
+![LCD](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/blog/LCDIMAGE.PNG?raw=true)
 
 
 
