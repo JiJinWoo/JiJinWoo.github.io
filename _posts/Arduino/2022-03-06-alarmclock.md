@@ -11,7 +11,7 @@ sidebar_main: true
 
 > **설명**
 
-아두이노로 간단한 알람시계를 만들어보았다. 
+아두이노로 간단한 알람시계를 만들어보았다. LCD 화면에 오늘의 날짜, 시간, 알람이 울릴 시간이 출력된다. 알람이 울릴 시간이 되면 부저가 울리게 되고 스위치를 누르면 알람을 끄고 초기화 시킨다.
 
 ---
 
@@ -30,6 +30,7 @@ sidebar_main: true
 
 > **[회로도]하드웨어 설계**
 
+![image](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/blog/ALARM.jpg?raw=true)
 
 ![circuit](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/blog/alarmclock.PNG?raw=true)
 
@@ -163,4 +164,6 @@ void numberPrint(int number){   //10보다 작은 수가 출력 될 때 앞에 0
 
 > **참고사항**
 
-* 참조 : [**https://www.kocoafab.cc/make/view/144**](https://www.kocoafab.cc/make/view/144) 
+* 참조 : [**https://www.kocoafab.cc/make/view/144**](https://www.kocoafab.cc/make/view/144)
+
+* 스위치를 누르고 알람을 초기화 시키면 소스코드 상에서 직접 알람시간을 다시 조정해줘야 한다.
