@@ -14,6 +14,8 @@ SinglyLinkedList는 데이터를 보관하는 node와 다음 node의 주소를 �
 > **SinglyLinkedList Method**
 
 * ```void addFrontNode(int n)```
+
+
 LinkedList node 맨 앞에 데이터를 추가한다.
 ```cpp
 void LinkedList::addFrontNode(int n){
@@ -32,6 +34,8 @@ void LinkedList::addFrontNode(int n){
 ```
 
 * ```void addNode(int n)```
+
+
 LinkedList 맨 뒤에 데이터를 추가한다.
 ```cpp
 void LinkedList::addNode(int n){
@@ -51,6 +55,8 @@ void LinkedList::addNode(int n){
 ```
 
 * ```void intsertNode(node* prevNode, int n)```
+
+
 LinkedList 중간에 데이터를 추가한다.
 ```cpp
 void LinkedList::insertNode(node* prev, int n){
@@ -63,6 +69,8 @@ void LinkedList::insertNode(node* prev, int n){
 ```
 
 * ```void deleteNode(node* prevNode)```
+
+
 LinkedList 데이터를 삭제한다.
 ```cpp
 void LinkedList::deleteNode(node* prev){
@@ -74,6 +82,8 @@ void LinkedList::deleteNode(node* prev){
 ```
 
 * ```void display(node* head)```
+
+
 LinkedList 데이터를 출력한다.
 ```cpp
 void LinkedList::display(node* head){
