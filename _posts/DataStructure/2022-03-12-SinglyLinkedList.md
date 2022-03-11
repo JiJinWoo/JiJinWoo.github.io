@@ -2,7 +2,7 @@
 layout: single
 title: "[C++]SinglyLinkedList"
 categories: ["algorithm"]
-tag: [algorithm]
+tag: [datastructure]
 author_profile: true
 sidebar_main: true
 ---
