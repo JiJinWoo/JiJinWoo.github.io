@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[아두이노]스마트폰 거치대"
+title: "[Arduino]스마트폰 거치대"
 categories: ["arduino"]
 tag: [arduino]
 author_profile: true
