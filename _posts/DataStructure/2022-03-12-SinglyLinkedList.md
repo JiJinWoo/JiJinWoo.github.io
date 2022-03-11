@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[C++]SinglyLinkedList"
+title: "[DS]SinglyLinkedList"
 categories: ["algorithm"]
 tag: [datastructure]
 author_profile: true

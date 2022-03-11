@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[아두이노]알람시계"
+title: "[Arduino]알람시계"
 categories: ["arduino"]
 tag: [arduino]
 author_profile: true

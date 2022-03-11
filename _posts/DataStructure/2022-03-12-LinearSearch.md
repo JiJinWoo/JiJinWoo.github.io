@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[C++]LinearSearch"
+title: "[DS]LinearSearch"
 categories: ["algorithm"]
 tag: [datastructure]
 author_profile: true

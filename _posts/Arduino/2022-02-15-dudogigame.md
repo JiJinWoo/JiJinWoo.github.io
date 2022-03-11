@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[아두이노]두더지잡기 게임"
+title: "[Arduino]두더지잡기 게임"
 categories: ["arduino"]
 tag: [arduino]
 author_profile: true
