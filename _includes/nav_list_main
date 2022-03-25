@@ -40,7 +40,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "AVR" %}
-                        <li><a href="/categories/AVR" class="">ATmega128 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/AVR" class="">LED ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
