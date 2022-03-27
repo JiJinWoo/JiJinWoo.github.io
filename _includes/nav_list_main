@@ -38,7 +38,7 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "AVmega128 이론" %}
+                    {% if category[0] == "ATmega128 이론" %}
                         <li><a href="/categories/AVR" class="">ATmega128 이론 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
