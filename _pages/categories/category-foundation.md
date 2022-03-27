@@ -1,5 +1,5 @@
 ---
-title: "ATmega128 기초"
+title: "ATmega128기초"
 layout: archive
 permalink: categories/ATmega128기초
 author_profile: true

@@ -39,14 +39,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ATmega128이론" %}
-                        <li><a href="/categories/ATmega128이론" class="">ATmega128 이론 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ATmega128이론" class="">ATmega128이론 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>    
             <ul>    
                 {% for category in site.categories %}
                     {% if category[0] == "ATmega128기초" %}
-                        <li><a href="/categories/ATmega128기초" class="">ATmega128 기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ATmega128기초" class="">ATmega128기초 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>       

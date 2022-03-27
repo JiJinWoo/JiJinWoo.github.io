@@ -1,5 +1,5 @@
 ---
-title: "ATmega128 이론"
+title: "ATmega128이론"
 layout: archive
 permalink: categories/ATmega128이론
 author_profile: true
