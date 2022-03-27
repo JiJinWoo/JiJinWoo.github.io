@@ -44,11 +44,10 @@
             <ul>    
                 {% for category in site.categories %}
                     {% if category[0] == "foundation" %}
-                        <li><a href="/categories/foundation 기초" class="">ATmega128 기초 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/foundation" class="">ATmega128 기초 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>       
       </li>
   </ul>
-`
 </nav>          
