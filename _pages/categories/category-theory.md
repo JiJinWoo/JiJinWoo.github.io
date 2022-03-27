@@ -1,7 +1,7 @@
 ---
 title: "ATmega128 이론"
 layout: archive
-permalink: categories/theory
+permalink: categories/ATmega128이론
 author_profile: true
 sidebar_main: true
 ---

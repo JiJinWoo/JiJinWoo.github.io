@@ -1,7 +1,7 @@
 ---
 title: "ATmega128 기초"
 layout: archive
-permalink: categories/foundation
+permalink: categories/ATmega128기초
 author_profile: true
 sidebar_main: true
 ---
