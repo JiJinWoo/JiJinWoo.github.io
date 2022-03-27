@@ -43,8 +43,8 @@
             </ul>    
             <ul>    
                 {% for category in site.categories %}
-                    {% if category[0] == "foundation" %}
-                        <li><a href="/categories/foundation" class="">ATmega128 기초 ({{category[1].size}})</a></li>
+                    {% if category[0] == "basic" %}
+                        <li><a href="/categories/basic" class="">ATmega128 기초 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>       
