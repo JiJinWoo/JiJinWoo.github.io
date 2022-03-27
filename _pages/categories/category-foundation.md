@@ -1,5 +1,5 @@
 ---
-title: "foundation"
+title: "ATmega128 기초"
 layout: archive
 permalink: categories/foundation
 author_profile: true

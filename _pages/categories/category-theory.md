@@ -1,5 +1,5 @@
 ---
-title: "theory"
+title: "ATmega128 이론"
 layout: archive
 permalink: categories/theory
 author_profile: true
