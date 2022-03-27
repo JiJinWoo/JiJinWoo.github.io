@@ -42,6 +42,8 @@
                         <li><a href="/categories/AVR" class="">ATmega128 이론 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
+            </ul>    
+            <ul>    
                 {% for category in site.categories %}
                     {% if category[0] == "ATmega128 기초" %}
                         <li><a href="/categories/ATmega128 기초" class="">ATmega128 기초 ({{category[1].size}})</a></li>
