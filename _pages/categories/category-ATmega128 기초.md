@@ -1,11 +1,11 @@
 ---
 title: "ATmega128 기초"
 layout: archive
-permalink: categories/ATmega128 기초
+permalink: categories/foundation
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.ATmega128 기초 %}
+{% assign posts = site.categories.foundation %}
 
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %}{% endfor %}
