@@ -1,7 +1,7 @@
 ---
-title: "ATmega128 기초"
+title: "foundation"
 layout: archive
-permalink: categories/ATmega128 기초
+permalink: categories/foundation
 author_profile: true
 sidebar_main: true
 ---
