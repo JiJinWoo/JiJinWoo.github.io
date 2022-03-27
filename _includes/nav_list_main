@@ -38,23 +38,17 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "AVR" %}
-                        <li><a href="/categories/AVR" class="">ATmega128 기초 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <li>
-        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">AVR</span>
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "AVR" %}
+                    {% if category[0] == "AVmega128 이론" %}
                         <li><a href="/categories/AVR" class="">ATmega128 이론 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>        
+                {% for category in site.categories %}
+                    {% if category[0] == "ATmega128 기초" %}
+                        <li><a href="/categories/ATmega128 기초" class="">ATmega128 기초 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>       
       </li>
   </ul>
-  
+
 </nav>          
