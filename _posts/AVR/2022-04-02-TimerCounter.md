@@ -51,11 +51,28 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 
 > TCCRn(Timer/Counter Control Register n = 0, 2)
 
+* 타이머/카운터를 제어하기 위한 레지스터이다.
+* **동작모드(WGM0n : Waveform Generation Mode n = 0, 1)**, **프리스케일러(CS0n, n = 0~2)**, **비교출력모드(COM0n : Compare Output Mode n = 0, 1)**, **핀제어(FOC0 : Force Ouput Compare)** 등 전반적인 동작 형태를 결정한다.
+
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/TCCR0%20page%20104.PNG?raw=true)|
 |:--:|
 |*[TCCR0 (Reference : ATmega128 datasheet page 104)]*|
 
+* 동작 모드(WGM0n : Waveform Generation Mode n = 0, 1)
+
+|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/Waveform%20Generation%20Mode%20page%20105.PNG?raw=true)|
+|:--:|
+|*[Waveform Generation Mode Table (Reference : ATmega128 datasheet page 105)]*|
+
+* 프리스케일러(CS0n : Clock Select n = 0~2)
+
+|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/Prescaler%20page%20106.PNG?raw=true)|
+|:--:|
+|*[Clock Select Table (Reference : ATmega128 datasheet page 106)]*|
+
 > TCNTn(Timer/Counter Register n = 0, 2)
+
+* **TCNT0**는 8bit로  0~0xff까지 카운트를 세며 0xff가 되면 **오버플로우 인터럽트**가 발생한다.
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/TCTN0%20page%20106.PNG?raw=true)|
 |:--:|
@@ -63,11 +80,15 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 
 > OCRn(Output Compare Register n = 0, 2)
 
+* **OCRn**는 TCNTn과 값이 같아지면 **비교일치 인터럽트**가 발생하고 **OCn** 핀에 출력을 제어한다.
+
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/OCR0%20page%20106.PNG?raw=true)|
 |:--:|
 |*[OCR0 (Reference : ATmega128 datasheet page 106)]*|
 
 > ASSR(Asynchronous Status Register)
+
+* TCNT0가 비동기 모드로 동작하는 경우 제어를 담당하는 레지스터이다.
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/ASSR%20page%20107.PNG?raw=true)|
 |:--:|
@@ -75,11 +96,19 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 
 > TIMSK(Timer/Counter Interrupt Mask Register)
 
+* **TIMSK**는 인터럽트를 활성화시킬 수 있는 레지스터이다.
+* **bit 0 - TOIE0** 를 set(1)하면 **오버플로우 인터럽트**를 활성할 수 있다.
+* **bit 1 - OCIE0** 를 set(1)하면 **비교일치 인터럽트**를 활성화 할 수 있다. 
+
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/TIMSK%20page%20109.PNG?raw=true)|
 |:--:|
 |*[TIMSK (Reference : ATmega128 datasheet page 109)]*|
 
 > TIFR(Timer/Counter Interrupt Flag Register)
+
+* **TIFR**은 발생한 인터럽트의 플래그 값을 저장하는 레지스터이다.
+* TCNTn에서 오버플로우가 발생하면 **bit 0 - TOV0**가 set(1) 되어 오버플로우 인터럽트가 발생한다.
+*  TCNTn과 OCRn 값이 비교일치되면 **bit 1 - OCF0**가 set(1)되어 비교일치 인터럽트가 발생한다.
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/TIFR%20page%20109.PNG?raw=true)|
 |:--:|
@@ -87,14 +116,16 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 
 > SFIOR(Special Fucntion IO Register)
 
+* 타이머/카운터를 동기화하는데 사용하는 레지스터이다.
+
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/SFIOR%20page%20110.PNG?raw=true)|
 |:--:|
 |*[SFIOR (Reference : ATmega128 datasheet page 110)]*|
 
 ## 타이머/카운터 동작
 
-* 타이머/카운터의 주된 용도는 **시간 측정**이다. **시간 측정**은 클럭의 개수를 카운트하는 것이다.
-	* EX) 클럭이 100Hz의 주기로 펄스를 발생시킨다면 총 100번의 카운팅 진행되면 1초가 지난 것이다.
+타이머/카운터의 주된 용도는 **시간 측정**이다. **시간 측정**은 클럭의 개수를 카운트하는 것이다.
+* EX) 클럭이 100Hz의 주기로 펄스를 발생시킨다면 총 100번의 카운팅 진행되면 1초가 지난 것이다.
 
 > Normal Mode
 
@@ -143,3 +174,8 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/Phase%20Correct%20PWM%20page%20106.PNG?raw=true)|
 |:--:|
 |*[Phase Correct PWM Table (Reference : ATmega128 datasheet page 106)]*|
+
+> Reference
+
+[1] [ATmega128 datasheet](https://www.alldatasheet.com/view.jsp?Searchword=Atmega128%20datasheet&gclid=CjwKCAjwxZqSBhAHEiwASr9n9BnM2BYUT8UYk14wDrEEu2xSXP17kQdJLfsgKoZNEAQW1gyPJWnHxBoCnYgQAvD_BwE)    
+[2] [https://m.blog.naver.com/gjs1029/221098320900](https://m.blog.naver.com/gjs1029/221098320900)
