@@ -17,6 +17,8 @@ toc_sticky: true
 * **ISR** 은 동시에 여러 가지가 실행될 수 없다. 즉, 어떤 **ISR** 이 수행되는 도중에 다른 인터럽트가 요청되면 그 인터럽트는 무시된다. **하지만 몇몇 예외도 존재한다.** 
 * 따라서 ISR 함수 내부는 간단한 코드만 작성하는 것이 바람직 하며, 절대 **ISR 함수 내부**에서는 **딜레이 함수**나 **반복문**을 사용하지 않아야 한다.
 
+* 인터럽트는 종류도 많고 사용하는 방법도 다양하기 때문에 이론을 어느정도 익힌 다음 코드를 직접 짜보면서 공부하는 방법이 좋은 것 같다.
+
 ## 인터럽트(Interrupt) 종류
 
 ATmega128에는 총 35개의 인터럽트가 있다. 상세한 인터럽트의 내용은 **Timer/Counter**에서 다룰 예정이다.
@@ -38,6 +40,10 @@ ATmega128에는 총 35개의 인터럽트가 있다. 상세한 인터럽트의 �
 > EICRA - 외부 인터럽트 제어 레지스터 A
 
 * **INT3:0 핀**의 동작을 제어할 수 있고 **Edge 트리거**일 때 클럭에 상관없이 **비기동적**으로 가능하다.
+	* bit 0~1 - ISC00, ISC01 -> INT 0번 핀
+	* bit 2~3 - ISC10, ISC11 -> INT 1번 핀
+	* bit 4~5 - ISC20, ISC21 -> INT 2번 핀
+	* bit 6~7 - ISC30, ISC31 -> INT 3번 핀
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EICRA%20page%2090.PNG?raw=true)|
 |:--:|
@@ -50,6 +56,10 @@ ATmega128에는 총 35개의 인터럽트가 있다. 상세한 인터럽트의 �
 > EICRB - 외부 인터럽트 제어 레지스터 B
 
 * **INT7:4 핀의 동작**을 제어할 수 있고 **Edge 트리거**일 때 **I/O 클럭**이 필요하다.
+	* bit 0~1 - ISC40, ISC41 -> INT 4번 핀
+	* bit 2~3 - ISC50, ISC51 -> INT 5번 핀
+	* bit 4~5 - ISC60, ISC61 -> INT 6번 핀
+	* bit 6~7 - ISC70, ISC71 -> INT 7번 핀
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EICRB%20page%2091.PNG?raw=true)|
 |:--:|
@@ -63,9 +73,9 @@ ATmega128에는 총 35개의 인터럽트가 있다. 상세한 인터럽트의 �
 
 * INT 0번핀부터 INT 7번핀의 **활성화 여부**를 설정하는 레지스터이다.
 
-|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EIFR%20page%2092.PNG?raw=true)|
+|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EIMSK%20page%2092.PNG?raw=true)|
 |:--:|
-|*[EIFR (Reference : ATmega128 datasheet page 91)]*|
+|*[EIMSK (Reference : ATmega128 datasheet page 91)]*|
 
 ```cpp
 EIMSK = 0x11; //INT4, INT0 번핀 활성화
@@ -76,9 +86,9 @@ EIMSK = 0x11; //INT4, INT0 번핀 활성화
 * **EIFR** 은 **Edge 트리거**일 때 동작하며 외부 인터럽트가 발생하면 **플래그 값**을 저장하는 레지스터이다.
 * 외부 또는 내부에서 해당 핀에 인터럽트가 요청되면 알아서 해당 비트는 1로 설정된다. 다시 인터럽트가 실행 될 때 0으로 설정된다. 
 
-|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EIMSK%20page%2092.PNG?raw=true)|
+|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EIFR%20page%2092.PNG?raw=true)|
 |:--:|
-|*[EIMSK (Reference : ATmega128 datasheet page 91)]*|
+|*[EIFR (Reference : ATmega128 datasheet page 91)]*|
 
 > SREG - 상태 레지스터
 
