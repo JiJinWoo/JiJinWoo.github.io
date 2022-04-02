@@ -23,7 +23,7 @@ toc_sticky: true
 
 > 카운터(Counter)
 
-* **카운터**는 클럭의 한 주기를 뜻하며 클럭을 세는 장치이기도 하다.
+* **카운터**는 클럭의 **한 주기**를 뜻하며 클럭을 세는 장치이기도 하다.
 * 외부 핀에서 들어오는 펄스를 세는 장치이며 외부 입력의 변화를 감지한다.
 * 외부핀을 통해 들어오는 펄스의 수를 확인해 이벤트 카운터로 동작한다.
 * 비동기 모드이다.
@@ -107,8 +107,8 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 > TIFR(Timer/Counter Interrupt Flag Register)
 
 * **TIFR**은 발생한 인터럽트의 플래그 값을 저장하는 레지스터이다.
-* TCNTn에서 오버플로우가 발생하면 **bit 0 - TOV0**가 set(1) 되어 오버플로우 인터럽트가 발생한다.
-*  TCNTn과 OCRn 값이 비교일치되면 **bit 1 - OCF0**가 set(1)되어 비교일치 인터럽트가 발생한다.
+* TCNTn에서 **오버플로우가 발생**하면 **bit 0 - TOV0**가 **set(1)** 되어 **오버플로우 인터럽트**가 발생한다.
+*  TCNTn과 OCRn 값이 **비교일치**되면 **bit 1 - OCF0**가 **set(1)** 되어 **비교일치 인터럽트**가 발생한다.
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/TIFR%20page%20109.PNG?raw=true)|
 |:--:|
@@ -116,7 +116,7 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 
 > SFIOR(Special Fucntion IO Register)
 
-* 타이머/카운터를 동기화하는데 사용하는 레지스터이다.
+* 타이머/카운터를 **동기화**하는데 사용하는 레지스터이다.
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/SFIOR%20page%20110.PNG?raw=true)|
 |:--:|
