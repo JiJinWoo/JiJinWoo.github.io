@@ -97,8 +97,8 @@ ATmega128에는 총 4개의 타이머가 존재한다.
 > TIMSK(Timer/Counter Interrupt Mask Register)
 
 * **TIMSK**는 인터럽트를 활성화시킬 수 있는 레지스터이다.
-* **bit 0 - TOIE0** 를 set(1)하면 **오버플로우 인터럽트**를 활성할 수 있다.
-* **bit 1 - OCIE0** 를 set(1)하면 **비교일치 인터럽트**를 활성화 할 수 있다. 
+* **bit 0 - TOIE0** 를 **set(1)** 하면 **오버플로우 인터럽트**를 활성할 수 있다.
+* **bit 1 - OCIE0** 를 **set(1)** 하면 **비교일치 인터럽트**를 활성화 할 수 있다. 
 
 |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/TIMSK%20page%20109.PNG?raw=true)|
 |:--:|
