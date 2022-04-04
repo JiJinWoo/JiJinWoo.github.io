@@ -2,7 +2,7 @@
 layout: single
 title: "[ATmega128]Falling edge Interrupt LED 제어"
 categories: ["basic"]
-tag: [Interrupt][ATmega128]
+tag: [ATmega128]
 
 toc: true
 toc_label: "Table of Contents"
