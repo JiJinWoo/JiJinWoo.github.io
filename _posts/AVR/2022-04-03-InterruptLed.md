@@ -84,6 +84,11 @@ ISR(INT4_vect){		//INT 4번핀 인터럽트
 * 인터럽트 설정
 	* **EIMSK = 0x10;(0b0001_0000)** 을 선언해 INT 4번핀을 활성화시켰다.
 	* **EICRB = 0x02;(0b0000_0010)** 은 EICRB Table을 살펴보면 하강에지로 설정 값이 정해져있다.
+
+ |![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/EICRB%20table%20page%2091.PNG?raw=true)|
+|:--:|
+|*[EICRB Table (Reference : ATmega128 datasheet page 91)]*|
+
 * 하강에지(Falling edge)
 	* **falling edge**는 상태 1에서 0으로 변화하는 순간을 뜻한다.
 	* INT 4번핀을 **falling edge**로 설정한 이유는 스위치를 풀업으로 구성했기 때문이다. 풀업 저항으로 스위치를 구성하면 스위치가 열린 상태에서 HIGH값이 읽히고 닫힌 상태에선 LOW값이 읽히게 된다. 즉, **상태 1에서 0으로 변화하는 순간** 인터럽트가 발생해야 하므로 하강에지를 사용한 것이다.
