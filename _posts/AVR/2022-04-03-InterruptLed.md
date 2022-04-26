@@ -19,9 +19,9 @@ C++을 어느정도 익힌 사람이라면 **함수 호출**의 개념을 알고
 
 ## 하드웨어 설계
 
-|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/InterruptLed.PNG?raw=true)|
+|![blog](https://github.com/JiJinWoo/JiJinWoo.github.io/blob/master/assets/images/avrblog/interruptLEDBasic.PNG?raw=true)|
 |:---:|
-|*[Interrupt Led (Reference : https://m.blog.naver.com/gjs1029/221098320900)](https://m.blog.naver.com/gjs1029/221098320900)*|
+|*[Interrupt Led (Reference : Proteus 8)]*|
 
 ## 소스코드
 
