@@ -97,7 +97,7 @@ EIMSK = 0x11; //INT4, INT0 번핀 활성화
 |:--:|
 |*[SREG (Reference : ATmega128 datasheet page 11)]*|
 
-> Reference
+> **Reference**
 
 [1] [ATmega128 datasheet](https://www.alldatasheet.com/view.jsp?Searchword=Atmega128%20datasheet&gclid=CjwKCAjwxZqSBhAHEiwASr9n9BnM2BYUT8UYk14wDrEEu2xSXP17kQdJLfsgKoZNEAQW1gyPJWnHxBoCnYgQAvD_BwE)    
 [2] [https://m.blog.naver.com/gjs1029/221098320900](https://m.blog.naver.com/gjs1029/221098320900)
